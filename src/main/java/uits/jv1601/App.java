@@ -1,7 +1,7 @@
 package uits.jv1601;
 
 /**
- * Hello world!
+ * Hello Vasya!
  *
  */
 public class App 
