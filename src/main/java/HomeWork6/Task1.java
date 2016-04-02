@@ -16,48 +16,48 @@ public class Task1 {
         Scanner sc=new Scanner(System.in);
         boolean fin=false;
         while(!fin){
-            System.out.println("введите номер необходимой операции:");
-            System.out.println("2-рассчет объема цилиндра");
-            System.out.println("1-рассчет объема параллелепипеда");
-            System.out.println("3-рассчет объема шара");
-            System.out.println("4-рассчет объема полого цилиндра");
-            System.out.println("иной символ для выхода");
+            System.out.println("Enter the required transaction number:");
+            System.out.println("2-cylinder volume calculation");
+            System.out.println("1-calculation of the box volume");
+            System.out.println("3-sphere volume calculation");
+            System.out.println("4-calculation of the volume of the hollow cylinder");
+            System.out.println("a character to quit");
             
             try{
                 int operation=Integer.parseInt(sc.next());
                 switch(operation){
                     case 1:{
-                        System.out.println("введите через enter ширину,высоту,длину");
+                        System.out.println("enter via enter the width, height, length");
                         int w=Integer.parseInt(sc.next());
                         int h=Integer.parseInt(sc.next());
                         int l=Integer.parseInt(sc.next());
-                        System.out.println("объем параллелепипеда =" + parallelepipedVolume(w,h,l));
+                        System.out.println("the volume of the box =" + parallelepipedVolume(w,h,l));
                     }break;
                     case 2:{
-                        System.out.println("введите через enter радиус и высоту");
+                        System.out.println("enter enter through the radius and height");
                         int r=Integer.parseInt(sc.next());
                         int h=Integer.parseInt(sc.next());
-                        System.out.println("объем цилиндра = " + cilindrVolume(r,h));
+                        System.out.println("cylinder volume = " + cilindrVolume(r,h));
                     }break;
                     case 3:{
-                        System.out.println("введите через enter радиус");
+                        System.out.println("enter enter through the range");
                         int r=Integer.parseInt(sc.next());
-                        System.out.println("объем шара = " + ballVolume(r));
+                        System.out.println("the volume of a sphere = " + ballVolume(r));
                     }break;
                     case 4:{
-                        System.out.println("введите через enter высоту,внутренний радиус и внешний радиус");
+                        System.out.println("enter enter through the height, the inner radius and the outer radius");
                         int h=Integer.parseInt(sc.next());
                         int r1=Integer.parseInt(sc.next());
                         int r2=Integer.parseInt(sc.next());
-                        System.out.println("объем полого цилиндра = " + polcilindrVolume(h,r1,r2));
+                        System.out.println("volume of the hollow cylinder = " + polcilindrVolume(h,r1,r2));
                     }break;
                     default:{
                         fin=true;
                     }
                 }
-                System.out.println("Желаете продолжить?");
-                System.out.println("1-да");
-                System.out.println("2-нет");
+                System.out.println("Do you want to continue?");
+                System.out.println("1-yes");
+                System.out.println("2-no");
                 int operation2=Integer.parseInt(sc.next());
                 switch(operation2){
                     case 1:{ fin=false;
@@ -69,7 +69,7 @@ public class Task1 {
                 fin=true;
             }
         }  
-        System.out.println("до свидания!");
+        System.out.println("goodbye!");
     }
 
     private static double parallelepipedVolume(int w, int h, int l) {

@@ -23,14 +23,14 @@ public class Schet {
         Cilindr c=new Cilindr();
         Konys k=new Konys();
         Ysechkonys yk=new Ysechkonys();
-        System.out.println("sposob zadaniz : 1-random, 2- enter вручную: ");
+        System.out.println("sposob zadaniz : 1-random, 2- enter manually: ");
         ans1=sc.nextInt();
          System.out.println("vibor figur:1-paralelepiped,2-shar,3-cilindr,4-konys,5-ysechkonys ");
         ans2=sc.nextInt();    
             switch(ans2){
             case 1:{  
                 if(ans1==2){
-                    System.out.println("введите через enter длину,ширину,высоту");
+                    System.out.println("enter via enter the length, width, height");
                    p.a=Integer.parseInt(sc.next());
                    p.b=Integer.parseInt(sc.next());
                    p.c=Integer.parseInt(sc.next());
@@ -44,7 +44,7 @@ public class Schet {
             }break;
             case 2:{  
                 if(ans1==2){
-                    System.out.println("введите радиус");
+                    System.out.println("enter the radius");
                     s.r=Integer.parseInt(sc.next());
                 }else{
                 s.r=r.nextInt();
@@ -54,7 +54,7 @@ public class Schet {
             }break;
             case 3:{  
                  if(ans1==2){
-                    System.out.println("введите через enter радиус,высоту");
+                    System.out.println("enter enter through the radius, height");
                     c.r=Integer.parseInt(sc.next());
                     c.h=Integer.parseInt(sc.next());
                 }else{
@@ -65,7 +65,7 @@ public class Schet {
             }break;
             case 4:{  
                  if(ans1==2){
-                    System.out.println("введите через enter радиус,высоту");
+                    System.out.println("enter enter through the radius, height");
                     k.r=Integer.parseInt(sc.next());
                     k.h=Integer.parseInt(sc.next());
                 }else{
@@ -76,7 +76,7 @@ public class Schet {
             }break;
             case 5:{  
                  if(ans1==2){
-                    System.out.println("введите через enter малый радиус,большой радиус,высоту");
+                    System.out.println("enter enter through a small radius, a large radius, height");
                     yk.r1=Integer.parseInt(sc.next());
                     yk.r2=Integer.parseInt(sc.next());
                     yk.h=Integer.parseInt(sc.next());
