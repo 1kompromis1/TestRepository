@@ -17,11 +17,11 @@ public class HomeWork2 {
         l=2*PI*r;
         s0=PI*r*r;
         s=(R*R-r*r)*PI;
-        System.out.print("длина окружности l=");
+        System.out.print("dlina okrygnosti l=");
         System.out.println(l);
-        System.out.print("площадь окружности so=" );
+        System.out.print("ploshad okrygnosti so=" );
         System.out.println(s0 );
-        System.out.print("площадь кольца s=");
+        System.out.print("ploshad kolca s=");
         System.out.println(s );
     }
     

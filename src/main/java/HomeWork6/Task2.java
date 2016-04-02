@@ -15,38 +15,38 @@ public class Task2 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int m,n,i=0,j=0,ans1,ans2;
-        System.out.print("¬ведите количество строк  матрицы:");
+        System.out.print("Enter the number of columns:");
         n=sc.nextInt();
-        System.out.print("¬ведите количество столбцов  матрицы:");
+        System.out.print("Enter the number of columns:");
         m=sc.nextInt();
-        System.out.print(" ¬ведите способ задани€ массива: 1-генераци€ случайных чисел, 2- ввод вручную: ");
+        System.out.print(" Enter a way to specify an array of 1-random number generation, 2 manual entry: ");
         ans1=sc.nextInt();
         int[][] matr1= new int[n][m];          
         int[][] matr2= new int[n][m];
         switch(ans1){
             case 1:
-                System.out.println("1 матрица:");
+                System.out.println("1 matrix:");
                 initArray(matr1); // заполн€ем массив случайными числами
                 printArray(matr1); // выводим на экран
-                System.out.println("2 матрица:");
+                System.out.println("2 matrix:");
                 initArray(matr2); // заполн€ем массив случайными числами
                 printArray(matr2); // выводим на экран
             break;
             case 2: 
-                System.out.println("1 матрица:");
+                System.out.println("1 matrix:");
                 HinArray(matr1); // вводим значени€ элементов массива
                 printArray(matr1); // выводим на экран
-                System.out.println("2 матрица:");
+                System.out.println("2 matrix:");
                 HinArray(matr2); // вводим значени€ элементов массива
                 printArray(matr2); // выводим на экран
             break;
-            default: System.out.println("¬ведено неверное значение!");
+            default: System.out.println("Permission incorrect value!");
         }
-        System.out.println("ќперации над матрицами:");
-        System.out.println("1. —ложение матриц");
-        System.out.println("2. ”множение матриц");
-        System.out.println("3. ”множение матриц на число");
-        System.out.println("4. “ранспонирование матриц");
+        System.out.println("Operations on matrices:");
+        System.out.println("1. Addition of matrices");
+        System.out.println("2. Matrix multiplication");
+        System.out.println("3. Multiply by the number of matrices");
+        System.out.println("4. Transposing matrices");
         ans2=sc.nextInt();
         switch(ans2){
             case 1:
@@ -56,14 +56,14 @@ public class Task2 {
                 matProiz(matr1,matr2,m,n);
                 break;
             case 3:
-                System.out.println("¬ведите число, на которое необходимо умножить матрицу:");
+                System.out.println("Enter the number to which you want to multiply the matrix:");
                 int ch=sc.nextInt();
                 matChislo(matr1,matr2,m,n,ch);
                 break;
             case 4:
                 Transp(matr1,matr2,m,n);
                 break;
-            default: System.out.println("¬веден неверный номер!");
+            default: System.out.println("Incorrect number!");
             
                 
         }
