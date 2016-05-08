@@ -23,21 +23,21 @@ public class App {
 	static Scanner br = new Scanner((System.in));
 
 	public static void stats() throws IOException {
-		System.out.print("1. Введите вес (в граммах):.");
+		System.out.print("1.Enter the weight (in grams):.");
 		w = Integer.parseInt(br.nextLine());
-		System.out.println("2. Цвет.");
+		System.out.println("2. Colour.");
 		col = br.nextLine();
-		System.out.println("3. Зрелость (зеленый/спелый). ");
+		System.out.println("3. Maturity (green / ripe). ");
 		check = br.nextLine();
-		if (check.equals("зеленый"))
+		if (check.equals("green"))
 			r = false;
-		else if (check.equals("спелый"))
+		else if (check.equals("ripe"))
 			r = true;
-		System.out.println("4. Состояние (хорошее/плохое).");
+		System.out.println("4. Condition (good / bad).");
 		check = br.nextLine();
-		if (check.equals("хорошее"))
+		if (check.equals("good"))
 			con = true;
-		else if (check.equals("плохое"))
+		else if (check.equals("bad"))
 			con = false;
 	}
 
@@ -48,23 +48,23 @@ public class App {
 		Combine combine = new Combine();
 		int n = -1;
 		while (n != 0) {
-			System.out.println("1. Добавить растение в корзину.");
-			System.out.println("2. Вытянуть растение из корзины.");
-			System.out.println("3. Выход из программы.");
+			System.out.println("1. Add to Shopping Cart plant.");
+			System.out.println("2. Remove the plant from the basket.");
+			System.out.println("3. Exit the program.");
 			n = Integer.parseInt(br.nextLine());
 
 			switch (n) {
 
 			case 1:
-				System.out.println("1. Добавить овощ.");
-				System.out.println("2. Добавить фрукт.");
+				System.out.println("1. Add vegetable.");
+				System.out.println("2. Add fruit.");
 				n = Integer.parseInt(br.nextLine());
 				switch (n) {
 				case 1:
-					System.out.println("1. Картошка.");
-					System.out.println("2. Морковка.");
-					System.out.println("3. Сельдерей.");
-					System.out.println("4. Лук");
+					System.out.println("1. Potato.");
+					System.out.println("2. Carrot.");
+					System.out.println("3. Celery.");
+					System.out.println("4. Onion.");
 					n = Integer.parseInt(br.nextLine());
 					switch (n) {
 					case 1:
@@ -88,15 +88,15 @@ public class App {
 						basket.put(onion, onion.getType());
 						break;
 					default:
-						System.out.println("Неверное значение!");
+						System.out.println("Incorrect value!");
 						break;
 					}
 					break;
 				case 2:
-					System.out.println("1. Яблоко.");
-					System.out.println("2. Банан.");
-					System.out.println("3. Апельсин.");
-					System.out.println("4. Груша.");
+					System.out.println("1. Apple.");
+					System.out.println("2. Banana.");
+					System.out.println("3. Orange.");
+					System.out.println("4. Pear.");
 					n = Integer.parseInt(br.nextLine());
 					switch (n) {
 					case 1:
@@ -120,21 +120,21 @@ public class App {
 						basket.put(pear, pear.getType());
 						break;
 					default:
-						System.out.println("Неверное значение!");
+						System.out.println("Incorrect value!");
 						break;
 					}
 					break;
 				default:
-					System.out.println("Неверное значение!");
+					System.out.println("Incorrect value!");
 					break;
 				}
 				break;
 			case 2:
 				Plant[] plants = new Plant[basket.extractAll().length];
-				System.out.println("1. Выбраbasketть одно растение.");
-				System.out.println("2. Выбрать все фрукты.");
-				System.out.println("3. Выбрать все овощи.");
-				System.out.println("4. Выбрать все растения.");
+				System.out.println("1. Choose one plant.");
+				System.out.println("2. Choose whole fruits.");
+				System.out.println("3. Choose whole vegetables.");
+				System.out.println("4. Choose whole plants.");
 
 				n = Integer.parseInt(br.nextLine());
 				switch (n) {
@@ -160,13 +160,13 @@ public class App {
 					size = basket.extractAll().length;
 					break;
 				default:
-					System.out.println("Неверное значение!");
+					System.out.println("Incorrect value!");
 					break;
 				}
 
-				System.out.println("1. Почистить растения.");
-				System.out.println("2. Нарезать растения.");
-				System.out.println("3. Нашинковать растения.");
+				System.out.println("1. Clear plant.");
+				System.out.println("2. Cut plants.");
+				System.out.println("3. Shred plants.");
 				n = Integer.parseInt(br.nextLine());
 				switch (n) {
 				case 1:
@@ -186,13 +186,13 @@ public class App {
 					basket.getWeight();
 					break;
 				default:
-					System.out.println("Неверное значение!");
+					System.out.println("Incorrect value!");
 					break;
 				}
 			case 0:
 				break;
 			default:
-				System.out.println("Неверное значение!");
+				System.out.println("Incorrect value!");
 				break;
 			}
 		}

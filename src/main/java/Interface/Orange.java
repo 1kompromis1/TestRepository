@@ -11,7 +11,7 @@ package Interface;
  */
 public class Orange extends Fruit {
 
-	String kind = "Апельсин";
+	String kind = "Orange";
 
 	public Orange(double w, String col, boolean r, boolean c, boolean isP) {
 		weight = w;

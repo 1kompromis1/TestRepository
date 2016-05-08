@@ -12,7 +12,7 @@ package Interface;
 
 public class Apple extends Fruit {
 
-	String kind = "яблоко";
+	String kind = "Apple";
 
 	public Apple(double w, String col, boolean r, boolean c, boolean isP) {
 		weight = w;

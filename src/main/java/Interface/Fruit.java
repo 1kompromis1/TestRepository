@@ -12,6 +12,6 @@ package Interface;
 
 public class Fruit extends Plant {
 
-	String type = "Фрукт";
+	String type = "Fruit";
 
 }

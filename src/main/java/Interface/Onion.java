@@ -11,7 +11,7 @@ package Interface;
  */
 public class Onion extends Vegetable {
 	
-	String kind = "Ћук";
+	String kind = "Onion";
 	
 	public Onion(double w, String col, boolean r, boolean c, boolean isP) {
 		weight = w;

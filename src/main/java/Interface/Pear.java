@@ -11,7 +11,7 @@ package Interface;
  */
 public class Pear extends Fruit{
 	
-	String kind = "Груша";
+	String kind = "Pear";
 	
 	public Pear(double w, String col, boolean r, boolean c, boolean isP) {
 		weight = w;

@@ -69,8 +69,8 @@ public class Plant implements Peelable {
 	}
 
 	public void Print() {
-		System.out.println("Вес:" + weight + " Цвет: " + color + " Зрелость: " + ripeness + " Состояние: " + condition
-				+ " Очищенность: " + isPeeled);
+		System.out.println("Weight:" + weight + " Color: " + color + " Maturity: " + ripeness + " Condition: " + condition
+				+ " Purity: " + isPeeled);
 	}
 
 	public boolean isPeeled() {

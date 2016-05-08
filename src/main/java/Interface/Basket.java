@@ -30,7 +30,7 @@ public class Basket {
 		this.arr[size] = plant;
 		this.arr[size].type = type;
 		size++;
-		System.out.println("Вес: "+getWeight()+ "г.");
+		System.out.println("Weight: "+getWeight()+ "g.");
 	}
 
 	public void expand() {
@@ -63,12 +63,12 @@ public class Basket {
 		int c1 = 0;
 		int c2 = 0;
 		for (int i = 0; i < size; i++)
-			if ((arr[i].type).equals("Фрукт"))
+			if ((arr[i].type).equals("Fruit"))
 				count++;
 		Fruit[] temp = new Fruit[count];
 		Plant[] newtemp = new Plant[arr.length];
 		for (int i = 0; i < size; i++)
-			if ((arr[i].type).equals("Фрукт")) {
+			if ((arr[i].type).equals("Fruit")) {
 				temp[c1] = (Fruit) arr[i];
 				c1++;
 			} else {
@@ -86,12 +86,12 @@ public class Basket {
 		int c1 = 0;
 		int c2 = 0;
 		for (int i = 0; i < size; i++)
-			if ((arr[i].type).equals("Овощ"))
+			if ((arr[i].type).equals("Vegetables"))
 				count++;
 		Vegetable[] temp = new Vegetable[count];
 		Plant[] newtemp = new Plant[arr.length];
 		for (int i = 0; i < size; i++)
-			if ((arr[i].type).equals("Овощ")) {
+			if ((arr[i].type).equals("Vegetables")) {
 				temp[c1] = (Vegetable) arr[i];
 				c1++;
 			} else {
@@ -120,8 +120,8 @@ public class Basket {
 			System.out.println("Empty");
 		} else {
 			for (int i = 0; i < size; i++) {
-				System.out.println(i+1+" Вес:" + arr[i].weight + " Цвет: " + arr[i].color + " Зрелость: " + arr[i].ripeness
-						+ " Состояние: " + arr[i].condition + " Очищенность: " + arr[i].isPeeled);
+				System.out.println(i+1+" Weight:" + arr[i].weight + " Colour: " + arr[i].color + " Maturity: " + arr[i].ripeness
+						+ " Condition: " + arr[i].condition + " Purity: " + arr[i].isPeeled);
 			}
 			System.out.println();
 		}

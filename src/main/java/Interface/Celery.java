@@ -11,7 +11,7 @@ package Interface;
  */
 public class Celery extends Vegetable{
 	
-	String kind = "Сельдерей";
+	String kind = "Celery";
 	
 	public Celery(double w, String col, boolean r, boolean c, boolean isP) {
 		weight = w;
