@@ -11,7 +11,7 @@ package Interface;
  */
 public class Vegetable extends Plant {
 	
-	String type = "Vegetable";
+	String type = " Vegetable";
 	
 }
 
